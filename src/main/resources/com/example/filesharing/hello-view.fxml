@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color:#002B5B" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filesharing.HelloController">
+    <children>
+        <Button layoutX="235.0" layoutY="235.0" mnemonicParsing="false" onAction="#sentPage" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em; -fx-border-radius:50%;     -fx-border-color:red;     -fx-border-width: 3 3 3 3" text="Sent" textFill="#111111">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font></Button>
+        <Button layoutX="637.0" layoutY="235.0" mnemonicParsing="false" onAction="#receivePage" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em; -fx-border-radius:50%;     -fx-border-color:red;     -fx-border-width: 3 3 3 3" text="Receive" textFill="#111111">
+         <font>
+            <Font name="Californian FB Bold" size="22.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="5.0" prefHeight="41.0" prefWidth="151.0" text="File Sharing" textFill="#1effae">
+         <font>
+            <Font name="Centaur" size="29.0" />
+         </font>
+      </Label>
+        <Button fx:id="porfile" layoutX="913.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30" prefWidth="30" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em" />
+      <Label fx:id="ip" layoutX="789.0" layoutY="16.0" prefHeight="17.0" prefWidth="114.0" textFill="#7cf8e6">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Label>
+      <Label layoutX="768.0" layoutY="15.0" text="ip |" textFill="#7cf8e6" />
+    </children>
+</Pane>

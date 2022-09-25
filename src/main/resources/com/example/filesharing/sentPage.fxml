@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color:#002B5B" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filesharing.SentPageCont">
+   <children>
+      <Button layoutX="326.0" layoutY="91.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="30.0" prefWidth="298.0" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em" text="Select File">
+         <font>
+            <Font name="Californian FB" size="20.0" />
+         </font></Button>
+      <Label layoutX="326.0" layoutY="179.0" prefHeight="37.0" prefWidth="179.0" style="-fx-border-color:#1EFFAE;-fx-border-radius:50%;     -fx-border-width: 2 2 2 2" />
+
+      <TextField fx:id="receiver_ip" layoutX="375.0" layoutY="179.0" prefHeight="37.0" prefWidth="257.0" style="-fx-background-color:#002B5B;-fx-background-radius: 5em ;-fx-text-inner-color: #00ff75;-fx-border-color:#1EFFAE;-fx-border-radius:50%;     -fx-border-width: 2 2 2 2" text="192.168.0.104">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="376.0" layoutY="179.0" prefHeight="37.0" prefWidth="11.0" style="-fx-background-color:#002B5B;-fx-border-color:#1EFFAE;-fx-border-width: 0 2 0 0" />
+      <Label layoutX="345.0" layoutY="182.0" prefHeight="26.0" prefWidth="23.0" text="ip" textFill="#00ff75">
+         <font>
+            <Font name="Californian FB Bold" size="22.0" />
+         </font></Label>
+      <Button fx:id="connect_button" layoutX="322.0" layoutY="263.0" mnemonicParsing="false" onAction="#connect" prefHeight="37.0" prefWidth="306.0" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em" text="Sent">
+         <font>
+            <Font name="Californian FB Bold" size="20.0" />
+         </font></Button>
+
+
+      <Label fx:id="status" layoutX="321.0" layoutY="361.0" prefHeight="162.0" prefWidth="455.0" textFill="#00ff75">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font></Label>
+
+
+
+      <Label layoutX="319.0" layoutY="355.0" text=" Status :" textFill="#7cf8e6">
+         <font>
+            <Font name="Californian FB Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="back" layoutX="911.0" layoutY="17.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="30" prefWidth="30" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em" />
+      <Label fx:id="fileName" layoutX="117.0" layoutY="44.0" prefHeight="37.0" prefWidth="730.0" text="Sendable File" textFill="#00ff75">
+         <font>
+            <Font name="Californian FB Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="179.0" prefHeight="37.0" prefWidth="1.0" style="-fx-background-color:#002B5B;-fx-border-color:#1EFFAE;-fx-border-width: 0 2 0 0" />
+
+      <Label fx:id="icn" layoutX="517.0" layoutY="382.0" prefHeight="38.0" prefWidth="36.0" />
+      <Label fx:id="icn1" layoutX="517.0" layoutY="406.0" prefHeight="38.0" prefWidth="36.0">
+         <font>
+            <Font name="Californian FB" size="12.0" />
+         </font></Label>
+      <Label layoutX="788.0" layoutY="109.0" text=" Mode" textFill="#7cf8e6">
+         <font>
+            <Font name="Californian FB Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="normal" layoutX="788.0" layoutY="232.0" mnemonicParsing="false" onAction="#checkN" selected="true" text="Single Thread" textFill="#7cf8e6" />
+      <CheckBox fx:id="multi" layoutX="788.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkM" text="Multiple Thread" textFill="#7cf8e6" />
+      <CheckBox fx:id="comp" layoutX="790.0" layoutY="153.0" mnemonicParsing="false" onAction="#checkC" selected="true" text="Compressed" textFill="#7cf8e6" />
+
+      <TextField fx:id="n" layoutX="866.0" layoutY="316.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color:#002B5B;-fx-background-radius: 5em;-fx-text-inner-color: #00ff75;-fx-border-color:#F82D1B;-fx-border-radius:50%;     -fx-border-width: 1 1 1 1" text="10">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextField>
+      <Button fx:id="connect_button1" layoutX="788.0" layoutY="319.0" mnemonicParsing="false" onAction="#update" prefHeight="22.0" prefWidth="68.0" style="-fx-background-color:#1EFFAE;-fx-background-radius: 5em" text="Update">
+         <font>
+            <Font name="Californian FB Bold" size="11.0" />
+         </font>
+      </Button>
+    <AnchorPane layoutX="-14.0" layoutY="114.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="422.0" />
+
+
+
+   </children>
+</AnchorPane>
